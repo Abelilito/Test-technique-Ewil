@@ -19,3 +19,4 @@ Le bouton « Contact », situé dans la partie haute de la maquette, doit ouvrir
 Le clic sur un projet doit également ouvrir une modale (cf. bas de la maquette). Nous vous demandons d’y modifier dynamiquement le nom du projet, la date ainsi que la catégorie.
 
 La mise en place du filtre des projets (Tous, Mobile, Web, Interaction) n’est pas obligatoire.
+[export.pdf](https://github.com/user-attachments/files/24868872/export.pdf)
