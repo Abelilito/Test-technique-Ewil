@@ -26,6 +26,7 @@ class ProjectCardComponent extends HTMLElement {
     const name = this.getAttribute("name");
     const year = this.getAttribute("year");
     const url = this.getAttribute("img-url");
+    const text = this.getAttribute("text");
 
     this.shadowRoot.innerHTML = `
       <style>
@@ -34,6 +35,11 @@ class ProjectCardComponent extends HTMLElement {
           filter: drop-shadow(0 0 2.5px rgba(0,0,0,0.25));
           background-color: #ffffff;
           cursor: pointer;
+          transition: opacity 0.15s ease-in;
+        }
+
+        .card:hover .card-img {
+          opacity: 0.5;
         }
 
         .card-img {
@@ -59,7 +65,7 @@ class ProjectCardComponent extends HTMLElement {
         dialog { 
           background-color: transparent;
           border: none;
-          width: 75rem;
+          width: 55rem;
         }
 
         dialog:focus-visible {
@@ -77,7 +83,7 @@ class ProjectCardComponent extends HTMLElement {
           padding: 2rem;
           display: flex;
           flex-direction: column;
-          justify-content: space-around;
+          justify-content: space-between;
         }
         
         .btn-close {
@@ -102,6 +108,10 @@ class ProjectCardComponent extends HTMLElement {
 
         .w-full {
           width: 100%;
+        }
+
+        .mt-10 {
+          margin-top: 3rem;
         }
 
         @media (width >= 48rem) { 
@@ -134,26 +144,11 @@ class ProjectCardComponent extends HTMLElement {
             </div>
 
             <div class="w-full">
-              <div>${name}</div>
-              <div>${category} / ${year}</div>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt dolore pariatur doloremque voluptatibus 
-              numquam minima quasi animi officia nemo asperiores obcaecati vel repellat optio eum, perspiciatis ea 
-              inventore soluta laudantium?
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt dolore pariatur doloremque voluptatibus 
-              numquam minima quasi animi officia nemo asperiores obcaecati vel repellat optio eum, perspiciatis ea 
-              inventore soluta laudantium?
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt dolore pariatur doloremque voluptatibus 
-              numquam minima quasi animi officia nemo asperiores obcaecati vel repellat optio eum, perspiciatis ea 
-              inventore soluta laudantium?
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt dolore pariatur doloremque voluptatibus 
-              numquam minima quasi animi officia nemo asperiores obcaecati vel repellat optio eum, perspiciatis ea 
-              inventore soluta laudantium?
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt dolore pariatur doloremque voluptatibus 
-              numquam minima quasi animi officia nemo asperiores obcaecati vel repellat optio eum, perspiciatis ea 
-              inventore soluta laudantium?
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt dolore pariatur doloremque voluptatibus 
-              numquam minima quasi animi officia nemo asperiores obcaecati vel repellat optio eum, perspiciatis ea 
-              inventore soluta laudantium?
+              <div>
+                <div>${name}</div>
+                <div>${category} / ${year}</div>
+              </div>
+              <div class="mt-10">${text}</div>
             </div>
           </div>
         </div>
@@ -161,9 +156,8 @@ class ProjectCardComponent extends HTMLElement {
 
       <div class="card">
         <div class="card-img" style="background-image: url(${url})"></div>
-
         <div class="card-body">
-          <div>${category}</div>  
+          <div>${category}</div>
           <div class="wrapper-project">
             <div>${name}</div>
             <div>${year}</div>
