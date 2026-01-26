@@ -274,6 +274,62 @@ main .welcome-block .welcome-img {
     text-align: end;
   }
 }
+main .who-i-am-block {
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+}
+@media (width >= 64rem) {
+  main .who-i-am-block {
+    flex-direction: row;
+    gap: 5rem;
+  }
+}
+main .who-i-am-block .about {
+  font-size: 30px;
+  line-height: 45px;
+  color: #2b2a2c;
+  font-family: "Montserrat-bold", sans-serif;
+  text-transform: uppercase;
+}
+@media (width >= 64rem) {
+  main .who-i-am-block .about {
+    font-size: 45px;
+  }
+}
+main .who-i-am-block .who-i-am {
+  font-size: 40px;
+  line-height: 208px;
+  color: #E0E0E0;
+  font-family: "Montserrat-bold", sans-serif;
+  text-transform: uppercase;
+  margin-top: -3rem;
+}
+@media (width >= 64rem) {
+  main .who-i-am-block .who-i-am {
+    font-size: 72px;
+  }
+}
+main .who-i-am-block .text {
+  font-size: 15px;
+  line-height: 24px;
+  color: #6a696b;
+  font-family: "Montserrat-medium", sans-serif;
+  margin-top: -3rem;
+}
+@media (width >= 64rem) {
+  main .who-i-am-block .text {
+    margin-top: 0;
+  }
+}
+main .who-i-am-block img {
+  width: 100%;
+}
+@media (width >= 64rem) {
+  main .who-i-am-block img {
+    width: max-content;
+  }
+}
 main h1 {
   margin: 0;
 }
@@ -284,6 +340,14 @@ main h1 {
 
 .ft-light {
   font-family: "Montserrat-light", sans-serif;
+}
+
+.mt-8 {
+  margin-top: 8rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
 }
 
 @font-face {

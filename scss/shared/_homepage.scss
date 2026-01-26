@@ -73,6 +73,53 @@ main {
     }
   }
 
+  .who-i-am-block {
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    @media (width >= 64rem) {
+      flex-direction: row;
+      gap: 5rem;
+    }
+    .about {
+      font-size: 30px;
+      line-height: 45px;
+      color: #2b2a2c;
+      font-family: 'Montserrat-bold', sans-serif;
+      text-transform: uppercase;
+      @media (width >= 64rem) {
+        font-size: 45px;
+      }
+    }
+    .who-i-am {
+      font-size: 40px;
+      line-height: 208px;
+      color: #E0E0E0;
+      font-family: 'Montserrat-bold', sans-serif;
+      text-transform: uppercase;
+      margin-top: -3rem;
+      @media (width >= 64rem) {
+        font-size: 72px;
+      }
+    }
+    .text {
+      font-size: 15px;
+      line-height: 24px;
+      color: #6a696b;
+      font-family: 'Montserrat-medium', sans-serif;
+      margin-top: -3rem;
+      @media (width >= 64rem) {
+        margin-top: 0;
+      }
+    }
+    img {
+      width: 100%;
+      @media (width >= 64rem) {
+        width: max-content;;
+      }
+    }
+  }
+
   h1 {
     margin: 0;
   }
