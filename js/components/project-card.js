@@ -137,12 +137,14 @@ class ProjectCardComponent extends HTMLElement {
           gap: 1rem;
         }
 
-        .customer div {
+        .customer div,
+        .card-body .name,
+        .card-body .year {
           font-family: 'Montserrat-semi-bold', sans-serif;
           font-size: 16px;
         }
 
-        .customer span {
+        .customer span, .card-body .cat {
           font-family: 'Montserrat-light', sans-serif;
           font-size: 12px;
         }
@@ -194,10 +196,10 @@ class ProjectCardComponent extends HTMLElement {
       <div class="card">
         <div class="card-img" style="background-image: url(${url})"></div>
         <div class="card-body">
-          <div>${category}</div>
+          <div class="cat">${category}</div>
           <div class="wrapper-project">
-            <div>${name}</div>
-            <div>${year}</div>
+            <div class="name">${name}</div>
+            <div class="year">${year}</div>
           </div>  
         </div>
       </div>
