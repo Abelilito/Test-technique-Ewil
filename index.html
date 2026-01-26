@@ -9,6 +9,7 @@
     <script src="js/components/btn-contact.js"></script>
     <script src="js/components/project-card.js"></script>
     <script src="js/components/social-networks.js"></script>
+    <script src="js/components/blog-card.js"></script>
   </head>
   <body>
     <div class="main-page">
@@ -21,14 +22,48 @@
 
         <main>
           <div class="card-project-block">
-            <div class="wrapper-social-networks">
-              <social-networks name="behance" url="#"></social-networks>
-              <social-networks name="dribble" url="#"></social-networks>
-              <social-networks name="linkedin" url="#"></social-networks>
-              <social-networks name="facebook" url="#"></social-networks>
-              <social-networks name="instagram" url="#"></social-networks>
-              <social-networks name="x-twitter" url="#"></social-networks>
-            </div>
+            <blog-card
+              name="Project title"
+              text="
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi sint eum reprehenderit nisi veniam,
+                dolorum fugiat repellat veritatis eius, cumque, iusto consequatur vitae reiciendis unde facere earum id cum nihil.
+                "
+              url="images/projects/App-Screens-Perspective-MockUp-full.jpg"
+            >
+             <a href="#" class="btn btn-secondary">Project</a>
+          </blog-card>
+                  <blog-card
+              name="Project title"
+              text="
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi sint eum reprehenderit nisi veniam,
+                dolorum fugiat repellat veritatis eius, cumque, iusto consequatur vitae reiciendis unde facere earum id cum nihil.
+                "
+              url="images/projects/App-Screens-Perspective-MockUp-full.jpg"
+            >
+             <a href="#" class="btn btn-secondary">Project</a>
+          </blog-card>
+                  <blog-card
+              name="Project title"
+              text="
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi sint eum reprehenderit nisi veniam,
+                dolorum fugiat repellat veritatis eius, cumque, iusto consequatur vitae reiciendis unde facere earum id cum nihil.
+                "
+              url="images/projects/App-Screens-Perspective-MockUp-full.jpg"
+            >
+             <a href="#" class="btn btn-secondary">Project</a>
+          </blog-card>
+
+          </div>
+
+          <div class="wrapper-social-networks">
+            <social-networks name="behance" url="#"></social-networks>
+            <social-networks name="dribble" url="#"></social-networks>
+            <social-networks name="linkedin" url="#"></social-networks>
+            <social-networks name="facebook" url="#"></social-networks>
+            <social-networks name="instagram" url="#"></social-networks>
+            <social-networks name="x-twitter" url="#"></social-networks>
+          </div>
+          <div class="card-project-block">
             <project-card
               category="Web / Mobile"
               name="Project title"
