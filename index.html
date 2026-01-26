@@ -16,15 +16,29 @@
     <div class="main-page">
       <div>
         <header>
-          <avatar-img img-url="images/lewis.png"></avatar-img>
+          <nav class="container-header">
+            <div class="user-avatar">
+              <avatar-img img-url="images/lewis.png"></avatar-img>
+            </div>
 
-          <avatar-img img-url="images/lena.jpg" variant="column"></avatar-img>
-
-          <a href="#" class="btn btn-link">Project</a>
-          <btn-contact variant="btn-secondary" font-size="ft-14px"></btn-contact>
+            <input class="menu-btn" type="checkbox" id="menu-btn">
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+              <li><a href="#" class="btn btn-link">Project</a></li>
+              <li><a href="#" class="btn btn-link">À propos</a></li>
+              <li><a href="#" class="btn btn-link">Blog</a></li>
+              <li>
+                <btn-contact variant="btn-secondary" font-size="ft-14px"></btn-contact>
+              </li>
+            </ul>
+          </nav>
         </header>
-
+        
         <main>
+          <br><br><br><br><br><br><br><br><br><br><br>
+  
+          <avatar-img img-url="images/lena.jpg" variant="column"></avatar-img>
+  
           <div class="card-project-block">
             <blog-card
               name="Project title"
