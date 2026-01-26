@@ -333,6 +333,21 @@ main .who-i-am-block img {
 main h1 {
   margin: 0;
 }
+main .wrapper-banner {
+  margin-top: 4rem;
+}
+main .wrapper-banner .banner {
+  background-color: #2b2a2c;
+  text-align: center;
+  color: white;
+  padding: 4rem;
+}
+main .wrapper-banner .avatar-column {
+  position: relative;
+  top: -2rem;
+  display: flex;
+  justify-content: center;
+}
 
 .ft-18 {
   font-size: 18px;

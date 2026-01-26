@@ -123,4 +123,20 @@ main {
   h1 {
     margin: 0;
   }
+
+  .wrapper-banner {
+    margin-top: 4rem;
+    .banner {
+      background-color: #2b2a2c;
+      text-align: center;
+      color: white;
+      padding: 4rem;
+    }
+    .avatar-column {
+      position: relative;
+      top: -2rem;
+      display: flex;
+      justify-content: center;
+    }
+  }
 }
