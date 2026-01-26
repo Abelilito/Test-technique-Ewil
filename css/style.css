@@ -191,7 +191,7 @@ header nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   }
 }
 .card-project-block {
-  padding-top: 6rem;
+  padding-top: 10rem;
   width: 100%;
   display: grid;
   justify-content: center;

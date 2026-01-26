@@ -97,7 +97,7 @@ class BtnContactComponent extends HTMLElement {
           font-weight: 100;
           text-transform: uppercase;
           padding-top: 3rem;
-          font-family: 'Montserrat-semi-bold', sans-serif;
+          font-family: 'Montserrat-bold', sans-serif;
         }
         
         .subtitle {
