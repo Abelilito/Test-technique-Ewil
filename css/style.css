@@ -214,6 +214,78 @@ header nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   gap: 1rem;
 }
 
+.container {
+  display: grid;
+  margin: 0 1rem 0 1rem;
+}
+@media (width >= 48rem) {
+  .container {
+    margin: 0 3rem 0 3rem;
+  }
+}
+@media (width >= 64rem) {
+  .container {
+    margin: 0 8rem 0 8rem;
+  }
+}
+
+main {
+  padding-top: 2rem;
+}
+@media (width >= 48rem) {
+  main {
+    padding-top: 6rem;
+  }
+}
+main .welcome-block {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 3rem;
+}
+@media (width >= 48rem) {
+  main .welcome-block {
+    flex-direction: row;
+  }
+}
+main .welcome-block .welcome-first-block, main .welcome-block .about-me {
+  display: flex;
+  flex-direction: column;
+}
+main .welcome-block .welcome-first-block {
+  gap: 1.5rem;
+}
+main .welcome-block .welcome-first-block .about-me {
+  gap: 0.5rem;
+}
+main .welcome-block .welcome-first-block .about-me div {
+  font-size: 27px;
+  font-family: "Montserrat-bold", sans-serif;
+}
+main .welcome-block .welcome-first-block .about-me h1 {
+  font-size: 32px;
+  font-family: "Montserrat-bold", sans-serif;
+}
+main .welcome-block .welcome-img {
+  text-align: center;
+}
+@media (width >= 48rem) {
+  main .welcome-block .welcome-img {
+    text-align: end;
+  }
+}
+main h1 {
+  margin: 0;
+}
+
+.ft-18 {
+  font-size: 18px;
+}
+
+.ft-light {
+  font-family: "Montserrat-light", sans-serif;
+}
+
 @font-face {
   font-family: "Montserrat-thin";
   src: url("../fonts/Montserrat-Thin.woff2") format("woff2");

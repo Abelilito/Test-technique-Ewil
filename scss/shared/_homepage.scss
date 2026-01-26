@@ -19,3 +19,61 @@
   display: flex;
   gap: 1rem;
 }
+
+.container {
+  display: grid;
+  margin: 0 1rem 0 1rem;
+  @media (width >= 48rem) {
+    margin: 0 3rem 0 3rem;
+  }
+  @media (width >= 64rem) { 
+    margin: 0 8rem 0 8rem;
+  }
+}
+
+main {
+  padding-top: 2rem;
+  @media (width >= 48rem) { 
+    padding-top: 6rem;
+  }
+
+  .welcome-block {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 3rem;
+    @media (width >= 48rem) { 
+      flex-direction: row;
+    }
+    .welcome-first-block, .about-me {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .welcome-first-block {
+      gap: 1.5rem;
+      .about-me {
+        gap: 0.5rem;
+        div {
+          font-size: 27px;
+          font-family: 'Montserrat-bold', sans-serif;
+        }
+        h1 {
+          font-size: 32px;
+          font-family: 'Montserrat-bold', sans-serif;
+        }
+      }
+    }
+
+    .welcome-img {
+      text-align: center;
+      @media (width >= 48rem) { 
+        text-align: end;
+      }
+    }
+  }
+
+  h1 {
+    margin: 0;
+  }
+}
