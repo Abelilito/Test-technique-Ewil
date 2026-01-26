@@ -41,13 +41,24 @@ class BlogCardComponent extends HTMLElement {
           display: flex;
           justify-content: space-between;
         }
+
+        .card-body .name {
+          font-family: 'Montserrat-semi-bold', sans-serif;
+          font-size: 16px;
+        }
+
+        .card-body .text {
+          font-family: 'Montserrat-light', sans-serif;
+          font-size: 15px;
+          line-height: 24px;
+        }
       </style>
 
       <div class="card">
         <div class="card-img" style="background-image: url(${url})"></div>
         <div class="card-body">
-          <div>${name}</div>
-          <div>${text}</div>
+          <div class="name">${name}</div>
+          <div class="text">${text}</div>
           <slot></slot>
         </div>
       </div>

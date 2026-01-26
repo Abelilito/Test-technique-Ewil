@@ -51,10 +51,13 @@ class AvatarComponent extends HTMLElement {
           align-items: center;
         }
 
-        .column {
-          flex-direction: column;
+        img {
           width: max-content;
-          justify-content: center;
+        }
+
+        .avatar-component.column {
+          flex-direction: column;
+          align-items: center;
         }
 
         .column div {

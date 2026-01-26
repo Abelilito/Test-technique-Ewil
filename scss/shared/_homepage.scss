@@ -1,5 +1,4 @@
 .card-project-block {
-  padding-top: 6rem;
   width: 100%; 
   display: grid; 
   justify-content: center; 
@@ -18,4 +17,125 @@
 .wrapper-social-networks {
   display: flex;
   gap: 1rem;
+}
+
+.container {
+  display: grid;
+  margin: 0 1rem 0 1rem;
+  @media (width >= 48rem) {
+    margin: 0 3rem 0 3rem;
+  }
+  @media (width >= 64rem) { 
+    margin: 0 8rem 0 8rem;
+  }
+}
+
+main {
+  padding-top: 2rem;
+  @media (width >= 48rem) { 
+    padding-top: 6rem;
+  }
+
+  .welcome-block {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 3rem;
+    @media (width >= 48rem) { 
+      flex-direction: row;
+    }
+    .welcome-first-block, .about-me {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .welcome-first-block {
+      gap: 1.5rem;
+      .about-me {
+        gap: 0.5rem;
+        div {
+          font-size: 27px;
+          font-family: 'Montserrat-bold', sans-serif;
+        }
+        h1 {
+          font-size: 32px;
+          font-family: 'Montserrat-bold', sans-serif;
+        }
+      }
+    }
+
+    .welcome-img {
+      text-align: center;
+      @media (width >= 48rem) { 
+        text-align: end;
+      }
+    }
+  }
+
+  .who-i-am-block {
+    display: flex;
+    gap: 3rem;
+    flex-direction: column;
+    @media (width >= 64rem) {
+      flex-direction: row;
+      gap: 5rem;
+    }
+    .about {
+      font-size: 30px;
+      line-height: 45px;
+      color: #2b2a2c;
+      font-family: 'Montserrat-bold', sans-serif;
+      text-transform: uppercase;
+      @media (width >= 64rem) {
+        font-size: 45px;
+      }
+    }
+    .who-i-am {
+      font-size: 40px;
+      line-height: 208px;
+      color: #E0E0E0;
+      font-family: 'Montserrat-bold', sans-serif;
+      text-transform: uppercase;
+      margin-top: -3rem;
+      @media (width >= 64rem) {
+        font-size: 72px;
+      }
+    }
+    .text {
+      font-size: 15px;
+      line-height: 24px;
+      color: #6a696b;
+      font-family: 'Montserrat-medium', sans-serif;
+      margin-top: -3rem;
+      @media (width >= 64rem) {
+        margin-top: 0;
+      }
+    }
+    img {
+      width: 100%;
+      @media (width >= 64rem) {
+        width: max-content;;
+      }
+    }
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  .wrapper-banner {
+    margin-top: 4rem;
+    .banner {
+      background-color: #2b2a2c;
+      text-align: center;
+      color: white;
+      padding: 4rem;
+    }
+    .avatar-column {
+      position: relative;
+      top: -2rem;
+      display: flex;
+      justify-content: center;
+    }
+  }
 }

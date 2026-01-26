@@ -27,6 +27,7 @@ class ProjectCardComponent extends HTMLElement {
     const year = this.getAttribute("year");
     const url = this.getAttribute("img-url");
     const text = this.getAttribute("text");
+    const customer = this.getAttribute("customer");
 
     this.shadowRoot.innerHTML = `
       <style>
@@ -114,6 +115,40 @@ class ProjectCardComponent extends HTMLElement {
           margin-top: 3rem;
         }
 
+        .name {
+          font-family: 'Montserrat-bold', sans-serif;
+          font-size: 32px;
+        }
+
+        .cat {
+          font-family: 'Montserrat-light', sans-serif;
+          font-size: 18px;
+        }
+
+        .text {
+          font-family: 'Montserrat-light', sans-serif;
+          font-size: 12px;
+          line-height: 24px;
+        }
+
+        .projet-details {
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .customer div,
+        .card-body .name,
+        .card-body .year {
+          font-family: 'Montserrat-semi-bold', sans-serif;
+          font-size: 16px;
+        }
+
+        .customer span, .card-body .cat {
+          font-family: 'Montserrat-light', sans-serif;
+          font-size: 12px;
+        }
+
         @media (width >= 48rem) { 
           .dialog-body {
             flex-direction: row;
@@ -144,11 +179,15 @@ class ProjectCardComponent extends HTMLElement {
             </div>
 
             <div class="w-full">
-              <div>
-                <div>${name}</div>
-                <div>${category} / ${year}</div>
-              </div>
-              <div class="mt-10">${text}</div>
+              <div class="projet-details">
+                <div class="name">${name}</div>
+                <div class="cat">${category} / ${year}</div>
+                <div class="customer">
+                  <div>Client: </div>
+                  <span>${customer}</span>
+                </div>
+              </div >
+              <div class="mt-10 text">${text}</div>
             </div>
           </div>
         </div>
@@ -157,10 +196,10 @@ class ProjectCardComponent extends HTMLElement {
       <div class="card">
         <div class="card-img" style="background-image: url(${url})"></div>
         <div class="card-body">
-          <div>${category}</div>
+          <div class="cat">${category}</div>
           <div class="wrapper-project">
-            <div>${name}</div>
-            <div>${year}</div>
+            <div class="name">${name}</div>
+            <div class="year">${year}</div>
           </div>  
         </div>
       </div>

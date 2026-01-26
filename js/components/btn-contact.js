@@ -97,21 +97,24 @@ class BtnContactComponent extends HTMLElement {
           font-weight: 100;
           text-transform: uppercase;
           padding-top: 3rem;
+          font-family: 'Montserrat-bold', sans-serif;
         }
         
         .subtitle {
-          font-size: 16px;
+          font-size: 14px;
           line-height: 45px;
           color: #2b2a2c;
           font-weight: 100;
           text-transform: uppercase;
+          font-family: 'Montserrat-light', sans-serif;
         }
 
         .contact-details {
           display: flex;
           gap: 0.5rem;
           align-items: center;
-          }
+          font-family: 'Montserrat-light', sans-serif;
+        }
           
         .contact-details span {
           font-size: 14px;
@@ -123,6 +126,7 @@ class BtnContactComponent extends HTMLElement {
         .form {
           display: flex;
           flex-direction: column;
+          margin-top: 2rem
         }
 
         .gap-4 {
@@ -131,6 +135,10 @@ class BtnContactComponent extends HTMLElement {
 
         .gap-2 {
           gap: 0.5rem;
+        }
+
+        label {
+          font-family: 'Montserrat-medium', sans-serif;
         }
 
         input {
@@ -144,6 +152,8 @@ class BtnContactComponent extends HTMLElement {
 
         input, textarea {
           border: 1px solid #2b2a2c;
+          font-family: 'Montserrat-light', sans-serif;
+          font-size: 14px;
         }
 
         textarea {
@@ -173,6 +183,7 @@ class BtnContactComponent extends HTMLElement {
           background-color: #2b2a2c;
           color: white;
           border: 2px solid transparent;
+          font-family: 'Montserrat-semi-bold', sans-serif;
         }
 
         .btn-submit input:hover {
@@ -181,13 +192,13 @@ class BtnContactComponent extends HTMLElement {
           border: 2px solid #2b2a2c;
         }
 
-            .img-close-desktop {
-            display: none;
-          }
+        .img-close-desktop {
+          display: none;
+        }
 
-          .img-close-mobile {
-            display: block;
-          }
+        .img-close-mobile {
+          display: block;
+        }
         
         .modal-img {
           background-image: url("images/popup-1.jpg");
@@ -227,6 +238,10 @@ class BtnContactComponent extends HTMLElement {
           .modal-img {
             display: block;
           }
+
+          .form {
+            margin-top: 0;
+          }
         }
       </style>
 
@@ -246,7 +261,7 @@ class BtnContactComponent extends HTMLElement {
               </div>
               <div class="contact-details">
                 <img src="images/icons/email.png" alt="Mail icon" width=16 />
-                <span>designer@ui43.com/span>
+                <span>designer@ui43.com</span>
               </div>
             </div>
 
