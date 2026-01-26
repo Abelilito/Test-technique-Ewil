@@ -2,9 +2,9 @@
   text-transform: uppercase;
   cursor: pointer;
   text-decoration: none;
-  font-weight: 100;
   letter-spacing: 1px;
   font-size: 14px;
+  font-family: "Montserrat-semi-bold", sans-serif;
 }
 
 .btn-rounded-base {
@@ -214,6 +214,36 @@ header nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   gap: 1rem;
 }
 
+@font-face {
+  font-family: "Montserrat-thin";
+  src: url("../fonts/Montserrat-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-medium";
+  src: url("../fonts/Montserrat-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-semi-bold";
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-bold";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Montserrat-light";
+  src: url("../fonts/Montserrat-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
 body {
   margin: 0;
   display: flex;
