@@ -43,7 +43,6 @@ class BtnContactComponent extends HTMLElement {
           text-transform: uppercase;
           cursor: pointer;
           text-decoration: none;
-          font-weight: 100;
           letter-spacing: 1px;
           border-radius: 1000px;
           text-align: center;
@@ -58,6 +57,7 @@ class BtnContactComponent extends HTMLElement {
           background-color: white;
           border: 2px solid #2b2a2c;
           color: #2b2a2c;
+          font-family: 'Montserrat-semi-bold', sans-serif;
         }
         .btn-secondary:hover {
           background-color: #2b2a2c;
@@ -68,6 +68,7 @@ class BtnContactComponent extends HTMLElement {
           background-color: #2b2a2c;
           color: white;
           border: 2px solid transparent;
+          font-family: 'Montserrat-semi-bold', sans-serif;
         }
         .btn-primary:hover {
           background-color: white;

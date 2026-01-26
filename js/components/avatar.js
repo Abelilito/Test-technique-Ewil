@@ -10,6 +10,8 @@ class AvatarComponent extends HTMLElement {
 
   render() {
     const url = this.getAttribute("img-url");
+    const name = this.getAttribute("name");
+    const job = this.getAttribute("job");
     const variant = this.getAttribute("variant" || "default");
     let className;
 
@@ -28,6 +30,21 @@ class AvatarComponent extends HTMLElement {
         .avatar-component {
           display: flex;
           gap: 1rem;
+        }
+
+        .avatar-component .name {
+          font-family: 'Montserrat-bold', sans-serif;
+          font-size: 16px;
+        }
+
+        .avatar-component .job {
+          font-family: 'Montserrat-light', sans-serif;
+          font-size: 12px;
+        }
+
+        .avatar-component.default .name {
+          width: 8rem;
+          display: block;
         }
 
         .default {
@@ -59,7 +76,8 @@ class AvatarComponent extends HTMLElement {
       <div class="avatar-component ${className}">
         <img src="${url}" alt="Users picture" />
         <div>
-          texte
+          <div class="name">${name}</div>
+          <div class="job">${job}</div>
         </div>
       </div>
     `;
