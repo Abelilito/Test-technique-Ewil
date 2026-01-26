@@ -1,4 +1,4 @@
-class DialogTag extends HTMLElement {
+class BtnContactComponent extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
@@ -280,4 +280,4 @@ class DialogTag extends HTMLElement {
   }
 }
 
-customElements.define("btn-contact", DialogTag);
+customElements.define("btn-contact", BtnContactComponent);

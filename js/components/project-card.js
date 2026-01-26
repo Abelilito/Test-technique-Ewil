@@ -1,4 +1,4 @@
-class ProjectCard extends HTMLElement {
+class ProjectCardComponent extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
@@ -174,4 +174,4 @@ class ProjectCard extends HTMLElement {
   }
 }
 
-customElements.define("project-card", ProjectCard);
+customElements.define("project-card", ProjectCardComponent);

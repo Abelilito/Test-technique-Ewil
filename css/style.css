@@ -77,6 +77,11 @@
   }
 }
 
+.wrapper-social-networks {
+  display: flex;
+  gap: 1rem;
+}
+
 body {
   margin: 0;
   display: flex;
