@@ -5,13 +5,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ewil test technique - Abel</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/components/avatar.js"></script>
+    <script src="js/components/btn-contact.js"></script>
+    <script src="js/components/project-card.js"></script>
+    <script src="js/components/social-networks.js"></script>
+    <script src="js/components/blog-card.js"></script>
   </head>
+
   <body>
     <div class="main-page">
       <div>
-        <header>Header</header>
-        
-        <main>main</main>
+        <header>
+          <avatar-img img-url="images/lewis.png"></avatar-img>
+
+          <avatar-img img-url="images/lena.jpg" variant="column"></avatar-img>
+
+          <a href="#" class="btn btn-link">Project</a>
+          <btn-contact variant="btn-secondary" font-size="ft-14px"></btn-contact>
+        </header>
+
+        <main>
+          <div class="card-project-block">
+            <blog-card
+              name="Project title"
+              text="
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi sint eum reprehenderit nisi veniam,
+                dolorum fugiat repellat veritatis eius, cumque, iusto consequatur vitae reiciendis unde facere earum id cum nihil.
+                "
+              url="images/projects/App-Screens-Perspective-MockUp-full.jpg"
+            >
+             <a href="#" class="btn btn-secondary">Project</a>
+          </blog-card>
+                  <blog-card
+              name="Project title"
+              text="
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi sint eum reprehenderit nisi veniam,
+                dolorum fugiat repellat veritatis eius, cumque, iusto consequatur vitae reiciendis unde facere earum id cum nihil.
+                "
+              url="images/projects/App-Screens-Perspective-MockUp-full.jpg"
+            >
+             <a href="#" class="btn btn-secondary">Project</a>
+          </blog-card>
+                  <blog-card
+              name="Project title"
+              text="
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi sint eum reprehenderit nisi veniam,
+                dolorum fugiat repellat veritatis eius, cumque, iusto consequatur vitae reiciendis unde facere earum id cum nihil.
+                "
+              url="images/projects/App-Screens-Perspective-MockUp-full.jpg"
+            >
+             <a href="#" class="btn btn-secondary">Project</a>
+          </blog-card>
+
+          </div>
+
+          <div class="wrapper-social-networks">
+            <social-networks name="behance" url="#"></social-networks>
+            <social-networks name="dribble" url="#"></social-networks>
+            <social-networks name="linkedin" url="#"></social-networks>
+            <social-networks name="facebook" url="#"></social-networks>
+            <social-networks name="instagram" url="#"></social-networks>
+            <social-networks name="x-twitter" url="#"></social-networks>
+          </div>
+          <div class="card-project-block">
+            <project-card
+              category="Web / Mobile"
+              name="Project title"
+              year="2018"
+              img-url="images/projects/App-Screens-Perspective-MockUp-full.jpg"
+              text="
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt dolore pariatur doloremque voluptatibus 
+                numquam minima quasi animi officia nemo asperiores obcaecati vel repellat optio eum, perspiciatis ea 
+                inventore soluta laudantium?
+              "
+            ></project-card>
+
+            <project-card
+              category="Clique-moi"
+              name="Intéraction"
+              year="2019"
+              img-url="images/projects/sample_2.jpg"
+              text="
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt dolore pariatur doloremque voluptatibus 
+                numquam minima quasi animi officia nemo asperiores obcaecati vel repellat optio eum, perspiciatis ea 
+                inventore soluta laudantium?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt dolore pariatur doloremque voluptatibus 
+                numquam minima quasi animi officia nemo asperiores obcaecati vel repellat optio eum, perspiciatis ea 
+                inventore soluta laudantium?
+              "
+            ></project-card>
+
+            <project-card
+              category="Web"
+              name="Project title"
+              year="2020"
+              img-url="images/projects/sample_6.jpg"
+              text="
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt dolore pariatur doloremque voluptatibus 
+                numquam minima quasi animi officia nemo asperiores obcaecati vel repellat optio eum, perspiciatis ea 
+                inventore soluta laudantium?
+              "
+            ></project-card>
+
+            <project-card
+              category="Web"
+              name="Project title"
+              year="2021"
+              img-url="images/projects/sample_4.jpg"
+              text="
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt dolore pariatur doloremque voluptatibus 
+                numquam minima quasi animi officia nemo asperiores obcaecati vel repellat optio eum, perspiciatis ea 
+                inventore soluta laudantium?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt dolore pariatur doloremque voluptatibus 
+                numquam minima quasi animi officia nemo asperiores obcaecati vel repellat optio eum, perspiciatis ea 
+                inventore soluta laudantium?
+              "
+            ></project-card>
+
+            <project-card
+              category="Mobile / interaction"
+              name="Project title"
+              year="2022"
+              img-url="images/projects/sample_7.jpg"
+              text="
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt dolore pariatur doloremque voluptatibus 
+                numquam minima quasi animi officia nemo asperiores obcaecati vel repellat optio eum, perspiciatis ea 
+                inventore soluta laudantium?
+              "
+            ></project-card>
+
+            <project-card
+              category="Web"
+              name="Project title"
+              year="2023"
+              img-url="images/projects/sample_1.jpg"
+              text="
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt dolore pariatur doloremque voluptatibus 
+                numquam minima quasi animi officia nemo asperiores obcaecati vel repellat optio eum, perspiciatis ea 
+                inventore soluta laudantium?
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt dolore pariatur doloremque voluptatibus 
+                numquam minima quasi animi officia nemo asperiores obcaecati vel repellat optio eum, perspiciatis ea 
+                inventore soluta laudantium?
+              "
+            ></project-card>
+          </div>
+        </main>
       </div>
 
       <footer>footer</footer>

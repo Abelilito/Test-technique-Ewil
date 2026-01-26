@@ -1,0 +1,21 @@
+.card-project-block {
+  padding-top: 6rem;
+  width: 100%; 
+  display: grid; 
+  justify-content: center; 
+  gap: 1.8rem; 
+  grid-template-columns: repeat(auto-fit, 100%);
+
+  @media (min-width: 640px) {
+    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
+  }
+
+  @media (min-width: 1536px) {
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  }
+}
+
+.wrapper-social-networks {
+  display: flex;
+  gap: 1rem;
+}
