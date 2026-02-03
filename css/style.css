@@ -190,20 +190,22 @@ header nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
     display: none;
   }
 }
-.card-project-block {
+.wrapper-card {
   width: 100%;
   display: grid;
   justify-content: center;
-  gap: 1.8rem;
+  gap: 2.5rem;
   grid-template-columns: repeat(auto-fit, 100%);
 }
 @media (min-width: 640px) {
-  .card-project-block {
+  .wrapper-card {
+    gap: 1.8rem;
     grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
   }
 }
 @media (min-width: 1536px) {
-  .card-project-block {
+  .wrapper-card {
+    gap: 1.8rem;
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
@@ -290,18 +292,6 @@ main .who-i-am-block {
     gap: 5rem;
   }
 }
-main .who-i-am-block .about {
-  font-size: 30px;
-  line-height: 45px;
-  color: #2b2a2c;
-  font-family: "Montserrat-bold", sans-serif;
-  text-transform: uppercase;
-}
-@media (width >= 64rem) {
-  main .who-i-am-block .about {
-    font-size: 45px;
-  }
-}
 main .who-i-am-block .who-i-am {
   font-family: "Montserrat-bold", sans-serif;
   text-transform: uppercase;
@@ -329,8 +319,20 @@ main .who-i-am-block img {
     width: max-content;
   }
 }
-main h1 {
+main h1, main h3 {
   margin: 0;
+}
+main .bloc-title {
+  font-size: 30px;
+  line-height: 45px;
+  color: #2b2a2c;
+  font-family: "Montserrat-bold", sans-serif;
+  text-transform: uppercase;
+}
+@media (width >= 64rem) {
+  main .bloc-title {
+    font-size: 45px;
+  }
 }
 main .wrapper-banner {
   margin-top: 4rem;
@@ -362,6 +364,19 @@ main .wrapper-banner .avatar-column {
 
 .mt-4 {
   margin-top: 4rem;
+}
+
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
+.py-4 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.text-center {
+  text-align: center;
 }
 
 @font-face {

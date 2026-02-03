@@ -25,7 +25,7 @@
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
               <li><a href="#project" class="btn btn-link">Project</a></li>
-              <li><a href="#about" class="btn btn-link">À propos</a></li>
+              <li><a href="#bloc-title" class="btn btn-link">À propos</a></li>
               <li><a href="#blog" class="btn btn-link">Blog</a></li>
               <li>
                 <btn-contact variant="btn-secondary"></btn-contact>
@@ -61,10 +61,10 @@
               </div>
             </div>
 
-            <div id="project" class="card-project-block pt-8">
+            <div id="project" class="wrapper-card pt-8">
               <project-card
                 category="Web / Mobile"
-                name="Project title"
+                name="Blog title"
                 year="2018"
                 img-url="images/projects/App-Screens-Perspective-MockUp-full.jpg"
                 text="
@@ -150,13 +150,13 @@
               ></project-card>
             </div>
 
-            <div id="about" class="who-i-am-block pt-8">
+            <div id="bloc-title" class="who-i-am-block pt-8">
               <div>
                 <img src="images/undraw_Designer_by46.svg" alt="Users picture" />
               </div>
 
               <div>
-                <div class="about">À propos...</div>
+                <div class="bloc-title">À propos...</div>
                 <div class="who-i-am">Qui suis-je ?</div>
                 <div class="text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Et obcaecati neque laudantium, ipsa modi
@@ -189,39 +189,47 @@
             </div>
           </div>
 
-          <div class="container">
-            <div id="blog" class="card-project-block pt-8">
+          <div id="blog" class="container py-4">
+            <div class="text-center mb-4">
+              <h3 class="bloc-title">Mon blog</h3>
+              <p class="ft-18 ft-light">Mes avis sur les dernières tendances du web</p>
+            </div>
+
+            <div  class="wrapper-card">
               <blog-card
-                name="Project title"
+                name="Blog title"
                 text="
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi sint eum reprehenderit nisi veniam,
                   dolorum fugiat repellat veritatis eius, cumque, iusto consequatur vitae reiciendis unde facere earum id cum nihil.
                   "
                 url="images/projects/App-Screens-Perspective-MockUp-full.jpg"
+                date="20 jan"
               >
-                <a href="#" class="btn btn-secondary">Project</a>
+                <a href="#" class="btn btn-secondary">Lire</a>
               </blog-card>
 
               <blog-card
-                name="Project title"
+                name="Blog title"
                 text="
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi sint eum reprehenderit nisi veniam,
                   dolorum fugiat repellat veritatis eius, cumque, iusto consequatur vitae reiciendis unde facere earum id cum nihil.
                   "
                 url="images/projects/App-Screens-Perspective-MockUp-full.jpg"
+                date="20 jan"
               >
-                <a href="#" class="btn btn-secondary">Project</a>
+                <a href="#" class="btn btn-secondary">Lire</a>
               </blog-card>
 
               <blog-card
-                name="Project title"
+                name="Blog title"
                 text="
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi sint eum reprehenderit nisi veniam,
                   dolorum fugiat repellat veritatis eius, cumque, iusto consequatur vitae reiciendis unde facere earum id cum nihil.
                   "
                 url="images/projects/App-Screens-Perspective-MockUp-full.jpg"
+                date="20 jan"
               >
-                <a href="#" class="btn btn-secondary">Project</a>
+                <a href="#" class="btn btn-secondary">Lire</a>
               </blog-card>
             </div>
           </div>
@@ -232,4 +240,3 @@
     </div>
   </body>
 </html>
-<span></span>
