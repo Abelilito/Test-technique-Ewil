@@ -324,7 +324,7 @@ main h1, main h3, main h4 {
   margin: 0;
 }
 main .bloc-title {
-  font-size: 30px;
+  font-size: clamp(30px, 3.5vw, 4.5rem);
   line-height: 45px;
   color: #2b2a2c;
   font-family: "Montserrat-bold", sans-serif;
