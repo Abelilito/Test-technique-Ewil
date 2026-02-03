@@ -204,7 +204,7 @@ header nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 }
 @media (min-width: 1536px) {
   .card-project-block {
-    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -241,6 +241,7 @@ main .welcome-block {
   justify-content: space-between;
   flex-direction: column;
   gap: 3rem;
+  flex-wrap: wrap;
 }
 @media (width >= 48rem) {
   main .welcome-block {
@@ -297,28 +298,22 @@ main .who-i-am-block .about {
   }
 }
 main .who-i-am-block .who-i-am {
-  font-size: 40px;
-  line-height: 208px;
-  color: #E0E0E0;
   font-family: "Montserrat-bold", sans-serif;
   text-transform: uppercase;
-  margin-top: -3rem;
-}
-@media (width >= 64rem) {
-  main .who-i-am-block .who-i-am {
-    font-size: 72px;
-  }
+  color: #E0E0E0;
+  font-size: clamp(2rem, 6vw, 4.5rem);
+  line-height: 1.1;
 }
 main .who-i-am-block .text {
   font-size: 15px;
   line-height: 24px;
   color: #6a696b;
   font-family: "Montserrat-medium", sans-serif;
-  margin-top: -3rem;
+  margin-top: 3rem;
 }
 @media (width >= 64rem) {
   main .who-i-am-block .text {
-    margin-top: 0;
+    margin-top: 1rem;
   }
 }
 main .who-i-am-block img {
@@ -356,8 +351,8 @@ main .wrapper-banner .avatar-column {
   font-family: "Montserrat-light", sans-serif;
 }
 
-.mt-8 {
-  margin-top: 8rem;
+.pt-8 {
+  padding-top: 8rem;
 }
 
 .mt-4 {
