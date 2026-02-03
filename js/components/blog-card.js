@@ -12,6 +12,7 @@ class BlogCardComponent extends HTMLElement {
     const text = this.getAttribute("text");
     const name = this.getAttribute("name");
     const url = this.getAttribute("url");
+    const date = this.getAttribute("date");
 
     this.shadowRoot.innerHTML = `
       <style>
@@ -45,6 +46,7 @@ class BlogCardComponent extends HTMLElement {
         .card-body .name {
           font-family: 'Montserrat-semi-bold', sans-serif;
           font-size: 16px;
+          text-transform: uppercase;
         }
 
         .card-body .text {
@@ -52,10 +54,24 @@ class BlogCardComponent extends HTMLElement {
           font-size: 15px;
           line-height: 24px;
         }
+        
+        .date {
+          background-color: #2b2a2c;
+          color: white;
+          width: 3rem;
+          height: 3rem;
+          font-size: 22px;
+          padding: 1rem;
+          text-align: center;
+          text-transform: uppercase;
+          font-family: 'Montserrat-light', sans-serif;
+        }
       </style>
 
       <div class="card">
-        <div class="card-img" style="background-image: url(${url})"></div>
+        <div class="card-img" style="background-image: url(${url})">
+          <div class="date">${date}</div>
+        </div>
         <div class="card-body">
           <div class="name">${name}</div>
           <div class="text">${text}</div>
