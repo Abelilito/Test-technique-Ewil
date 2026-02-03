@@ -267,6 +267,9 @@ main .welcome-block .welcome-first-block .about-me h1 {
 }
 main .welcome-block .welcome-img {
   text-align: center;
+  img {
+    width: 100%;
+  }
 }
 @media (width >= 48rem) {
   main .welcome-block .welcome-img {
