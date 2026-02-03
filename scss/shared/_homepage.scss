@@ -57,13 +57,15 @@ main {
       gap: 1.5rem;
       .about-me {
         gap: 0.5rem;
-        div {
-          font-size: 27px;
-          font-family: 'Montserrat-bold', sans-serif;
-        }
         h1 {
-          font-size: 32px;
-          font-family: 'Montserrat-bold', sans-serif;
+          .hello {
+            font-size: clamp(18px, 2vw, 3rem);
+            font-family: 'Montserrat-bold', sans-serif;
+          }
+          .name {
+            font-size: clamp(30px, 3.5vw, 4.5rem);
+            font-family: 'Montserrat-bold', sans-serif;
+          }
         }
       }
     }
@@ -116,12 +118,12 @@ main {
     }
   }
 
-  h1, h3 {
+  h1, h3, h4 {
     margin: 0;
   }
 
   .bloc-title {
-    font-size: 30px;
+    font-size: clamp(30px, 3.5vw, 4.5rem);
     line-height: 45px;
     color: #2b2a2c;
     font-family: 'Montserrat-bold', sans-serif;
