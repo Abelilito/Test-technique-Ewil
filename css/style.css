@@ -241,6 +241,7 @@ main .welcome-block {
   justify-content: space-between;
   flex-direction: column;
   gap: 3rem;
+  flex-wrap: wrap;
 }
 @media (width >= 48rem) {
   main .welcome-block {
