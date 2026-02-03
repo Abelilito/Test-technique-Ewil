@@ -297,28 +297,22 @@ main .who-i-am-block .about {
   }
 }
 main .who-i-am-block .who-i-am {
-  font-size: 40px;
-  line-height: 208px;
-  color: #E0E0E0;
   font-family: "Montserrat-bold", sans-serif;
   text-transform: uppercase;
-  margin-top: -3rem;
-}
-@media (width >= 64rem) {
-  main .who-i-am-block .who-i-am {
-    font-size: 72px;
-  }
+  color: #E0E0E0;
+  font-size: clamp(2rem, 6vw, 4.5rem);
+  line-height: 1.1;
 }
 main .who-i-am-block .text {
   font-size: 15px;
   line-height: 24px;
   color: #6a696b;
   font-family: "Montserrat-medium", sans-serif;
-  margin-top: -3rem;
+  margin-top: 3rem;
 }
 @media (width >= 64rem) {
   main .who-i-am-block .text {
-    margin-top: 0;
+    margin-top: 1rem;
   }
 }
 main .who-i-am-block img {
