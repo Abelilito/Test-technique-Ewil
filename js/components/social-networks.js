@@ -9,15 +9,17 @@ class SocialNetworksComponent extends HTMLElement {
   }
 
   render() {
-    const name = this.getAttribute("name");
+    const icon = this.getAttribute("name");
     const url = this.getAttribute("url");
+    const hasBoxColor = this.hasAttribute("boxColor");
+    const bgColor = !hasBoxColor ? icon : "";
+    const boxWidth = !hasBoxColor ? "box" : "no-box";
 
     this.shadowRoot.innerHTML = `
       <style>
         .box {
           width: 41px;
           height: 41px;
-          background-color: green;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -46,11 +48,20 @@ class SocialNetworksComponent extends HTMLElement {
           background-color: #56acef;
         }
 
+        .size-behance, .size-dribble, .size-facebook,
+        .size-x-twitter, .size-linkedin {
+          width: 18px;
+        }
+
+        .size-instagram {
+          width: 21px;
+        }
+
       </style>
 
       <a href="${url}" class="decoration-none">
-        <div class="box ${name}">
-          <img src="images/icons/${name}.png" alt="social network" width=22 class="img-close-mobile" />
+        <div class="${boxWidth} ${bgColor}">
+          <img src="images/icons/${icon}.png" alt="social network"  class="size-${icon}" />
         </div>
       </a>
     `;

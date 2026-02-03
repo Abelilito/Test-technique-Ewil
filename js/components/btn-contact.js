@@ -67,7 +67,7 @@ class BtnContactComponent extends HTMLElement {
         .btn-primary {
           background-color: #2b2a2c;
           color: white;
-          border: 2px solid transparent;
+          border: 2px solid white;
           font-family: 'Montserrat-semi-bold', sans-serif;
         }
         .btn-primary:hover {

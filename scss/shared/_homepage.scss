@@ -19,6 +19,7 @@
 .wrapper-social-networks {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
 .container {
@@ -136,8 +137,15 @@ main {
       background-color: #2b2a2c;
       text-align: center;
       color: white;
-      padding: 4rem;
+      padding: 2rem 1rem 2rem 1rem;
+      @media (width >= 48rem) {
+        padding: 3rem;
+      }
+      @media (width >= 64rem) {
+        padding: 3rem 8rem 3rem 8rem;
+      }
     }
+
     .avatar-column {
       position: relative;
       top: -2rem;
