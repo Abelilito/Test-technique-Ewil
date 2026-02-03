@@ -67,6 +67,9 @@ main {
 
     .welcome-img {
       text-align: center;
+      img {
+        width: 100%;
+      }
       @media (width >= 48rem) { 
         text-align: end;
       }
