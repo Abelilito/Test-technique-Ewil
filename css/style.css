@@ -213,6 +213,7 @@ header nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
 .wrapper-social-networks {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
 .container {
@@ -341,7 +342,17 @@ main .wrapper-banner .banner {
   background-color: #2b2a2c;
   text-align: center;
   color: white;
-  padding: 4rem;
+  padding: 2rem 1rem 2rem 1rem;
+}
+@media (width >= 48rem) {
+  main .wrapper-banner .banner {
+    padding: 3rem;
+  }
+}
+@media (width >= 64rem) {
+  main .wrapper-banner .banner {
+    padding: 3rem 8rem 3rem 8rem;
+  }
 }
 main .wrapper-banner .avatar-column {
   position: relative;
@@ -377,6 +388,36 @@ main .wrapper-banner .avatar-column {
 
 .text-center {
   text-align: center;
+}
+
+footer {
+  background-color: #2b2a2c;
+  padding: 20px 4rem 20px 4rem;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  font-size: 14px;
+  gap: 1rem;
+}
+@media (width >= 48rem) {
+  footer {
+    padding: 1rem;
+    flex-direction: row;
+  }
+}
+@media (width >= 64rem) {
+  footer {
+    padding: 1rem 8rem 1rem 8rem;
+    flex-direction: row;
+  }
+}
+footer :first-child {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 @font-face {
