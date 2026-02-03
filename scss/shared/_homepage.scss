@@ -67,10 +67,12 @@ main {
 
     .welcome-img {
       text-align: center;
+      width: 100%;
       img {
         width: 100%;
       }
-      @media (width >= 48rem) { 
+      @media (width >= 64rem) { 
+        width: 50%;
         text-align: end;
       }
     }

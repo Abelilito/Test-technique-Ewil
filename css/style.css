@@ -268,12 +268,14 @@ main .welcome-block .welcome-first-block .about-me h1 {
 }
 main .welcome-block .welcome-img {
   text-align: center;
+  width: 100%;
 }
 main .welcome-block .welcome-img img {
   width: 100%;
 }
-@media (width >= 48rem) {
+@media (width >= 64rem) {
   main .welcome-block .welcome-img {
+    width: 50%;
     text-align: end;
   }
 }
