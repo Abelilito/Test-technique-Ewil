@@ -250,21 +250,21 @@ main .welcome-block {
     flex-direction: row;
   }
 }
-main .welcome-block .welcome-first-block, main .welcome-block .bloc-title-me {
+main .welcome-block .welcome-first-block, main .welcome-block .about-me {
   display: flex;
   flex-direction: column;
 }
 main .welcome-block .welcome-first-block {
   gap: 1.5rem;
 }
-main .welcome-block .welcome-first-block .bloc-title-me {
+main .welcome-block .welcome-first-block .about-me {
   gap: 0.5rem;
 }
-main .welcome-block .welcome-first-block .bloc-title-me div {
+main .welcome-block .welcome-first-block .about-me div {
   font-size: 27px;
   font-family: "Montserrat-bold", sans-serif;
 }
-main .welcome-block .welcome-first-block .bloc-title-me h1 {
+main .welcome-block .welcome-first-block .about-me h1 {
   font-size: 32px;
   font-family: "Montserrat-bold", sans-serif;
 }

@@ -47,14 +47,14 @@ main {
     @media (width >= 48rem) {
       flex-direction: row;
     }
-    .welcome-first-block, .bloc-title-me {
+    .welcome-first-block, .about-me {
       display: flex;
       flex-direction: column;
     }
 
     .welcome-first-block {
       gap: 1.5rem;
-      .bloc-title-me {
+      .about-me {
         gap: 0.5rem;
         div {
           font-size: 27px;
